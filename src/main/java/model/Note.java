@@ -12,6 +12,7 @@ import java.util.Date;
 @Entity
 @Table(name="notes")
 @NamedQuery(name="Note.findAll", query="SELECT n FROM Note n")
+@NamedQuery(name="Note.findById", query="SELECT n FROM Note n where n.id=:id")
 public class Note implements Serializable {
 	private static final long serialVersionUID = 1L;
 
